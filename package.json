@@ -1,46 +1,16 @@
 {
   "name": "react-hooks-component-props-mini-project",
-  "version": "0.1.0",
-  "private": true,
-  "jest": {
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    }
-  },
-  "dependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "crypto-browserify": "^3.12.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "vite": "^6.2.6"
-  },
-  "devDependencies": {
-    "@learn-co-curriculum/jest-learn-reporter": "^0.1.0",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "mocha": "^8.2.1"
-  },
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@testing-library/react": "^16.3.0",
+    "vitest": "^x.x.x"
   }
 }
