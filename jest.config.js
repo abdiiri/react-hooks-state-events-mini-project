@@ -1,7 +1,6 @@
-// jest.config.js
 module.exports = {
-  testEnvironment: "jest-environment-jsdom", // Specify the jsdom environment explicitly
-  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"], // Ensure this path is correct
+  testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
   moduleFileExtensions: ["js", "jsx"],
   testMatch: ["**/__tests__/**/*.test.js?(x)"],
   transform: {
