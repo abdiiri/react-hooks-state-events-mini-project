@@ -1,8 +1,14 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "../components/App";
+import { CATEGORIES } from "../data";
 
 test("renders the correct child components", () => {
-  const { container } = render(<App />);
-  expect(container).not.toBeNull();
+  render(<App />);
+  expect(screen.getByText("Task List")).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", { name: CATEGORIES[0] })
+  ).toBeInTheDocument();
+  expect(screen.getByRole("list")).toBeInTheDocument();
+  expect(screen.getByRole("form")).toBeInTheDocument();
 });

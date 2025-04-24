@@ -1,5 +1,7 @@
-/** @type {import('jest').Config} */
 module.exports = {
-  testEnvironment: "jest-environment-jsdom",
-  testMatch: ["<rootDir>/src/__tests__/**/*.test.js?(x)"],
+  setupFilesAfterEnv: ["@testing-library/jest-dom"],
+  testEnvironment: "jsdom",
+  transform: {
+    "^.+\\.(js|jsx)$": "babel-jest",
+  },
 };
